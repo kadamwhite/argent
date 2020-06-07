@@ -1,9 +1,9 @@
 /*
-Theme Name: Argent
+Theme Name: Argent 2
 Theme URI: https://wordpress.com/themes/argent/
 Description: Argent is a clean and modern portfolio theme, geared towards creative professionals like designers, artists, and photographers. With its simple homepage template featuring portfolio projects, Argent aims to draw viewers right at what matters most: your wonderful work.
 Version: 1.1.5
-Author: Automattic
+Author: Automattic, K Adam White
 Author URI: https://wordpress.com/themes/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -16,6 +16,7 @@ Text Domain: argent
 1.0 Normalize
 2.0 Typography
 3.0 Elements
+3.5 Elements
 4.0 Forms
 5.0 Navigation
 	5.1 Links
@@ -175,6 +176,8 @@ i {
 }
 blockquote:not(.contact-form-submission) {
 	font-family: "Alegreya", Georgia, serif;
+	/* font-size: 20px;
+	font-size: 2rem; */
 	font-size: 40px;
 	font-size: 4rem;
 	font-style: italic;
@@ -320,6 +323,63 @@ th {
 	font-weight: bold;
 	padding: 10px 5px 5px;
 	border-bottom: 4px solid #222;
+}
+
+/*--------------------------------------------------------------
+3.5 Blocks
+--------------------------------------------------------------*/
+
+.wp-block-button {
+	margin-bottom: 1.7778em;
+}
+.wp-block-button.alignleft,
+.wp-block-button.alignright {
+	margin-bottom: unset;
+}
+
+.wp-block-categories.aligncenter {
+	list-style-type: none;
+	text-align: center;
+}
+
+.wp-block-separator {
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-block-separator.is-style-wide {
+	max-width: unset;
+}
+.wp-block-quote {
+	margin: 0 0 1.7778em;
+	padding: 0 1em;
+}
+.wp-block-quote p {
+	font-size: 24px;
+	line-height: 1.6;
+	margin-bottom: 0.5em;
+}
+.wp-block-quote cite,
+.wp-block-quote footer {
+	text-align: right;
+}
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+	margin: 0 0 1.7778em;
+	padding: 0;
+}
+.wp-block-quote.is-large p,
+.wp-block-quote.is-style-large p {
+	font-size: 40px;
+	font-size: 4rem;
+	line-height: 1.3em;
+	margin-bottom: 1em;
+}
+.wp-block-quote.is-large cite,
+.wp-block-quote.is-large footer,
+.wp-block-quote.is-style-large cite,
+.wp-block-quote.is-style-large footer {
+	text-align: left;
 }
 
 /*--------------------------------------------------------------

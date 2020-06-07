@@ -310,3 +310,34 @@ html .mceContentBody.rtl {
 }
 .rtl td {
 	text-align: right;
+}
+
+/*--------------------------------------------------------------
+3.5 Blocks
+--------------------------------------------------------------*/
+
+.wp-block-button,
+[data-block] {
+	margin-top: 0;
+	margin-bottom: 1.7778em;
+}
+[data-align="center"] .wp-block-button-wrapper {
+	width: 100%;
+}
+[data-align="center"] .wp-block-button,
+[data-align="center"] .wp-block-button__inline-link {
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-block-button.alignleft,
+.wp-block-button.alignright,
+[data-align="left"] [data-block],
+[data-align="right"] [data-block] {
+	margin-bottom: unset;
+}
+
+.wp-block-categories.aligncenter,
+[data-align="center"] .wp-block-categories ul {
+	list-style-type: none;
+	text-align: center;
+}

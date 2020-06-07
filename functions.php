@@ -45,7 +45,15 @@ function argent_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	add_editor_style( array( 'editor-style.css', argent_fonts_url() ) );
+	// Block Editor support.
+	add_theme_support( 'editor-styles');
+	add_theme_support( 'align-wide' );
+	add_theme_support( 'align-full' );
+	add_theme_support( 'responsive-embeds' );
+
+	// Apply editor stylesheets.
+	// add_editor_style( array( 'editor-style.css', argent_fonts_url() ) );
+	add_editor_style( argent_fonts_url() );
 
 	/*
 	 * Let WordPress manage the document title.
@@ -208,6 +216,14 @@ function argent_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'argent_scripts' );
+
+/**
+ * Enqueue scripts and styles used within the block editor.
+ */
+function argent_editor_scripts() {
+	wp_enqueue_script( 'argent-blocks', get_template_directory_uri() . '/js/blocks.js', array(), '20190816', true );
+}
+// add_action( 'enqueue_block_editor_assets', 'argent_editor_scripts' );
 
 function argent_excerpt_length( $length ) {
 	return 20;
