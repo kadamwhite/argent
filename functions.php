@@ -196,6 +196,8 @@ function argent_fonts_url() {
 function argent_scripts() {
 	wp_enqueue_style( 'argent-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'argent-style-js', 'http://localhost:8080/styles.js', [], '20150326', true );
+
 	wp_enqueue_style( 'argent-fonts', argent_fonts_url(), array(), null );
 
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.4.1' );
