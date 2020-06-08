@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+10.1 Site Branding & top-level container layout styling
+--------------------------------------------------------------*/
+.site-branding {
+	background-color: #f7f7f7;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto;
+	padding: 4.25em 0;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+.home .site-branding {
+	padding: 2.5em 0;
+}
+.custom-background .site-branding {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+.site-title {
+	display: table;
+	font-family: "Cabin",Helvetica,sans-serif;
+	line-height: 1.25;
+	letter-spacing: .03em;
+	margin: 0 auto;
+	max-width: 90%;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 0;
+}
+.site-description {
+	display: none;
+	font-family: "Cabin", Helvetica, sans-serif;
+	margin-top: 0.8889em;
+}
+.site-title a {
+	border: 10px solid currentColor;
+	color: #222;
+	display: block;
+	padding: 0 .25em;
+}
+.site-main {
+	margin: 3.5556em 0;
+}
+.site-footer {
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	padding: 1.7778em 0;
+	text-align: center;
+}
+.site-info,
+.site-info a {
+	color: rgba(255, 255, 255, 0.5);
+}
+.site-info a:hover {
+	color: rgba(255, 255, 255, 1);
+}

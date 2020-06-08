@@ -12,6 +12,15 @@ Text Domain: argent
 @import 'variables';
 @import 'mixins';
 @import 'reset';
+
+// Global Styles
 @import 'accessibility';
 @import 'typography';
+@import 'elements';
+@import 'forms';
+
+// Site Sections
 @import 'navigation';
+@import 'clearings';
+@import 'branding-layout';
+@import 'widgets';

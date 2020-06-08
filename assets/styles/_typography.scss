@@ -1,14 +1,13 @@
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
 body {
-    @include scss-font-lock( 14px, 16px, 320px, 640px, 14px );
-    @include scss-font-lock( 16px, 18px, 640px, 1280px, 14px );
     // CSS Locks
     // Font size grows from 16px to 18px.
     font-size: calc( 16px + 2 * ( 100vw - 1280px ) / ( 1280 - 320 ) );
     // Base line height grows from 1.4 to 1.8.
     line-height: calc( 22.4px + 10 * ( ( 100vw - 320px ) / ( 1280 - 320 ) ) );
-    @include respond-above( 1280px ) {
-        line-height: 1.8;
-    }
+    @include respond-above( 1280px ) { line-height: 1.8; }
 }
 
 body,
@@ -160,4 +159,11 @@ sup {
 
 sub {
 	bottom: -0.25em;
+}
+
+dt {
+	font-weight: bold;
+}
+th {
+    font-weight: bold;
 }

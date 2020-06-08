@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.footer-widget-area {
+	background: rgba(0, 0, 0, 0.86);
+	padding-top: 4em;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+.widget-area,
+.widget-area a {
+	color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.widget {
+	margin: 0 0 1.7778em;
+	overflow: hidden;
+}
+.widget-title {
+	font-family: "Cabin", Helvetica, sans-serif;
+	font-size: 20px;
+	font-size: 2rem;
+	letter-spacing: .03em;
+	margin-bottom: 1.7778em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.widget ul,
+.widget ol {
+	list-style: none;
+	margin: 0;
+}
+.widget ul > li,
+.widget ol > li {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 0.785em 0 0.857em;
+}
+.widget li > ul,
+.widget li > ol {
+	margin-left: 24px;
+}
+.widget ul ul {
+	margin-top: 0.785em;
+}
+.widget ul ul > li:last-child {
+	padding-bottom: 0;
+}
+.widget button,
+.widget input[type="button"],
+.widget input[type="submit"] {
+	border: 2px solid #ccc;
+	color: #ccc;
+}
+.widget button:hover,
+.widget input[type="button"]:hover,
+.widget input[type="submit"]:hover {
+	border: 2px solid #fff;
+	color: #fff;
+}
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget. */
+.widget_search .search-field {
+	width: 100%;
+}
+.widget_search .search-submit {
+	display: none;
+}
+
+/* Calendar widget */
+.widget_calendar caption {
+	text-align: center;
+}
+.widget_calendar th,
+.widget_calendar td {
+	text-align: center;
+	border-color: rgba(255, 255, 255, 0.1);
+}
+.widget_calendar td a {
+	font-weight: bold;
+}
+
+/* Social widgets */
+.jetpack_widget_social_icons ul,
+.widget_wpcom_social_media_icons_widget ul {
+	text-align: center;
+}
+
+.jetpack_widget_social_icons a:hover,
+.widget_wpcom_social_media_icons_widget a:hover {
+	opacity: 0.8;
+}
