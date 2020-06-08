@@ -1,0 +1,28 @@
+{
+  "name": "argent2",
+  "version": "1.0.0",
+  "description": "=== Argent ===",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config=.config/webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadamwhite/argent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kadamwhite/argent/issues"
+  },
+  "homepage": "https://github.com/kadamwhite/argent#readme",
+  "devDependencies": {
+    "@humanmade/webpack-helpers": "^0.7.1",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
